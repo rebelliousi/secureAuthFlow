@@ -10,8 +10,8 @@ const ProtectedRoute=({children})=>{
         <div>
          {loading && <div>Loading....</div>}
 
-          {!loading &&  !user &&<div><Navigate to='/login'/></div>}
-          {!loading &&  user &&<div>{children}</div>}
+          {!loading &&  !user &&<Navigate to='/login'/>}
+          {!loading &&  user && children}
         </div>
     )
 }
